@@ -586,7 +586,7 @@ function owoBig() {
       // 如果需要在评论内容中启用此功能请解除下面的注释
       // else if (dom.length == 1 && dom[0].className == 'tk-comment') owo_body = dom[0];
       else continue;
-
+    
       // 禁用右键（手机端长按会出现右键菜单，为了体验给禁用掉）
       if (document.body.clientWidth <= 768) owo_body.addEventListener('contextmenu', e => e.preventDefault());
       // 鼠标移入
@@ -599,7 +599,7 @@ function owoBig() {
               width = e.path[0].clientWidth * m, // 盒子宽
               left = (e.x - e.offsetX) - (width - e.path[0].clientWidth) / 2, // 盒子与屏幕左边距离
               top = e.y - e.offsetY; // 盒子与屏幕顶部距离
-
+    
             if ((left + width) > body.clientWidth) left -= ((left + width) - body.clientWidth + 10); // 右边缘检测，防止超出屏幕
             if (left < 0) left = 10; // 左边缘检测，防止超出屏幕
             // 设置盒子样式
@@ -828,11 +828,11 @@ function insertAtCursor(myField, myValue) {
     // 保存滚动条
     var restoreTop = myField.scrollTop;
     myField.value = myField.value.substring(0, startPos) + myValue + myField.value.substring(endPos, myField.value.length);
-
+    
     if (restoreTop > 0) {
       myField.scrollTop = restoreTop;
     }
-
+    
     myField.focus();
     myField.selectionStart = startPos + myValue.length;
     myField.selectionEnd = startPos + myValue.length;
@@ -902,7 +902,7 @@ function popupMenu() {
 
     // 当关掉自定义右键时候直接返回
     if (mouseMode == "off") return true;
-
+    
     $('.rightMenu-group.hide').hide();
     if (document.getSelection().toString()) {
       $('#menu-text').show();
@@ -1885,15 +1885,15 @@ function getTerm(y, n) {
   var _info = [
 
     parseInt('0x' + _table.substr(0, 5)).toString(),
-
+    
     parseInt('0x' + _table.substr(5, 5)).toString(),
-
+    
     parseInt('0x' + _table.substr(10, 5)).toString(),
-
+    
     parseInt('0x' + _table.substr(15, 5)).toString(),
-
+    
     parseInt('0x' + _table.substr(20, 5)).toString(),
-
+    
     parseInt('0x' + _table.substr(25, 5)).toString()
 
   ]
@@ -1901,61 +1901,61 @@ function getTerm(y, n) {
   var _calday = [
 
     _info[0].substr(0, 1),
-
+    
     _info[0].substr(1, 2),
-
+    
     _info[0].substr(3, 1),
-
+    
     _info[0].substr(4, 2),
 
 
 
     _info[1].substr(0, 1),
-
+    
     _info[1].substr(1, 2),
-
+    
     _info[1].substr(3, 1),
-
+    
     _info[1].substr(4, 2),
 
 
 
     _info[2].substr(0, 1),
-
+    
     _info[2].substr(1, 2),
-
+    
     _info[2].substr(3, 1),
-
+    
     _info[2].substr(4, 2),
 
 
 
     _info[3].substr(0, 1),
-
+    
     _info[3].substr(1, 2),
-
+    
     _info[3].substr(3, 1),
-
+    
     _info[3].substr(4, 2),
 
 
 
     _info[4].substr(0, 1),
-
+    
     _info[4].substr(1, 2),
-
+    
     _info[4].substr(3, 1),
-
+    
     _info[4].substr(4, 2),
 
 
 
     _info[5].substr(0, 1),
-
+    
     _info[5].substr(1, 2),
-
+    
     _info[5].substr(3, 1),
-
+    
     _info[5].substr(4, 2)
 
   ]
@@ -2011,27 +2011,27 @@ function toChinaDay(d) { // 日 => \u65e5
   switch (d) {
 
     case 10:
-
+    
       s = '\u521d\u5341'
-
+    
       break
-
+    
     case 20:
-
+    
       s = '\u4e8c\u5341'
-
+    
       break
-
+    
     case 30:
-
+    
       s = '\u4e09\u5341'
-
+    
       break
-
+    
     default:
-
+    
       s = nStr2[Math.floor(d / 10)]
-
+    
       s += nStr1[d % 10]
 
   }
@@ -2129,7 +2129,7 @@ function solar2lunar(y, m, d) { // 参数区间1900.1.31~2100.12.31
   for (i = 1900; i < 2101 && offset > 0; i++) {
 
     temp = lYearDays(i)
-
+    
     offset -= temp
 
   }
@@ -2183,23 +2183,23 @@ function solar2lunar(y, m, d) { // 参数区间1900.1.31~2100.12.31
   for (i = 1; i < 13 && offset > 0; i++) {
 
     // 闰月
-
+    
     if (leap > 0 && i === (leap + 1) && isLeap === false) {
-
+    
       --i
-
+    
       isLeap = true; temp = leapDays(year) // 计算农历闰月天数
-
+    
     } else {
-
+    
       temp = monthDays(year, i)// 计算农历普通月天数
-
+    
     }
-
+    
     // 解除闰月
-
+    
     if (isLeap === true && i === (leap + 1)) { isLeap = false }
-
+    
     offset -= temp
 
   }
@@ -2209,13 +2209,13 @@ function solar2lunar(y, m, d) { // 参数区间1900.1.31~2100.12.31
   if (offset === 0 && leap > 0 && i === leap + 1) {
 
     if (isLeap) {
-
+    
       isLeap = false
-
+    
     } else {
-
+    
       isLeap = true; --i
-
+    
     }
 
   }
@@ -2271,7 +2271,7 @@ function solar2lunar(y, m, d) { // 参数区间1900.1.31~2100.12.31
   if (firstNode === d) {
 
     isTerm = true
-
+    
     Term = solarTerm[m * 2 - 2]
 
   }
@@ -2279,7 +2279,7 @@ function solar2lunar(y, m, d) { // 参数区间1900.1.31~2100.12.31
   if (secondNode === d) {
 
     isTerm = true
-
+    
     Term = solarTerm[m * 2 - 1]
 
   }
@@ -2333,77 +2333,77 @@ var calendarFormatter = {
   lunar2solar: function (y, m, d, isLeapMonth) { // 参数区间1900.1.31~2100.12.1
 
     isLeapMonth = !!isLeapMonth
-
+    
     if (isLeapMonth && (leapMonth !== m)) { return -1 }// 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
-
+    
     if (y === 2100 && m === 12 && d > 1 || y === 1900 && m === 1 && d < 31) { return -1 } // 超出了最大极限值
-
+    
     var day = monthDays(y, m)
-
+    
     var _day = day
-
+    
     // bugFix 2016-9-25
-
+    
     // if month is leap, _day use leapDays method
-
+    
     if (isLeapMonth) {
-
+    
       _day = leapDays(y, m)
-
+    
     }
-
+    
     if (y < 1900 || y > 2100 || d > _day) { return -1 }// 参数合法性效验
 
 
 
     // 计算农历的时间差
-
+    
     var offset = 0
-
+    
     for (var i = 1900; i < y; i++) {
-
+    
       offset += lYearDays(i)
-
+    
     }
-
+    
     var leap = 0
-
+    
     var isAdd = false
-
+    
     for (i = 1; i < m; i++) {
-
+    
       leap = leapMonth(y)
-
+    
       if (!isAdd) { // 处理闰月
-
+    
         if (leap <= i && leap > 0) {
-
+    
           offset += leapDays(y); isAdd = true
-
+    
         }
-
+    
       }
-
+    
       offset += monthDays(y, i)
-
+    
     }
-
+    
     // 转换闰月农历 需补充该年闰月的前一个月的时差
-
+    
     if (isLeapMonth) { offset += day }
-
+    
     // 1900年农历正月一日的公历时间为1900年1月30日0时0分0秒(该时间也是本农历的最开始起始点)
-
+    
     var stmap = Date.UTC(1900, 1, 30, 0, 0, 0)
-
+    
     var calObj = new Date((offset + d - 31) * 86400000 + stmap)
-
+    
     var cY = calObj.getUTCFullYear()
-
+    
     var cM = calObj.getUTCMonth() + 1
-
+    
     var cD = calObj.getUTCDate()
-
+    
     return solar2lunar(cY, cM, cD)
 
   }
@@ -2843,7 +2843,7 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
     // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS
     allFrameCount++;
     frame++;
-
+    
     if (now > 1000 + lastTime) {
       var fps = Math.round((frame * 1000) / (now - lastTime));
       if (fps <= 5) {
@@ -2863,7 +2863,7 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
       frame = 0;
       lastTime = now;
     };
-
+    
     rAF(loop);
   }
 
@@ -3174,10 +3174,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-831my2_3840x3072.png);
+    --darkmode-bg:url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-g7wo7d_3840x3072.png);
+    --mobileday-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgBJ.png);
+    --mobilenight-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-nr1w9w_3840x3072.png);
   }`;
 }
 // 切换背景主函数
