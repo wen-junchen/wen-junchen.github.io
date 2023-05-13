@@ -2947,7 +2947,6 @@ function setFontBorder() {
   });
 }
 
-
 // 设置主题色
 if (localStorage.getItem("themeColor") == undefined) {
   localStorage.setItem("themeColor", "green");
@@ -3174,10 +3173,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-831my2_3840x3072.png);
-    --darkmode-bg:url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-g7wo7d_3840x3072.png);
-    --mobileday-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgBJ.png);
-    --mobilenight-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-nr1w9w_3840x3072.png);
+    --default-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-8oryeo_3840x3072.png);
+    --darkmode-bg:url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-9mr9xk_3840x3072.png);
+    --mobileday-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-lmj1xy_3840x3072.png);
+    --mobilenight-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-9mr9xk_3840x3072.png);
   }`;
 }
 // 切换背景主函数
