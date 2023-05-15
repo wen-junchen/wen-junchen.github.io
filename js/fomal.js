@@ -1119,7 +1119,7 @@ function createtime1() {
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到Fomalhaut🥝の小家!`,
+    `欢迎来到温俊臣🥝の小家!`,
     `Future is now 🍭🍭🍭`,
     `
         
@@ -3175,7 +3175,7 @@ if (localStorage.getItem("blogbg") != undefined) {
   document.getElementById("defineBg").innerText = `:root{
     --default-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-8oryeo_3840x3072.png);
     --darkmode-bg:url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-9mr9xk_3840x3072.png);
-    --mobileday-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-lmj1xy_3840x3072.png);
+    --mobileday-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-43zd33_3840x3072.png);
     --mobilenight-bg: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/imgwallhaven-9mr9xk_3840x3072.png);
   }`;
 }
