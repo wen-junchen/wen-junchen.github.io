@@ -7708,7 +7708,7 @@ button#go-up:hover #percent {
 
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content > .card-widget.card-info {
-  background-image: url(https://tuchuang.voooe.cn/images/2023/02/28/springBg.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/wen-junchen/blogimage/img%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E5%8D%A1.png);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
