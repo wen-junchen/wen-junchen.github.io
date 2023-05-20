@@ -6,7 +6,7 @@
   <link href="https://www.fomal.cc/atom.xml" rel="self"/>
   
   <link href="https://www.fomal.cc/"/>
-  <updated>2023-05-19T07:21:56.529Z</updated>
+  <updated>2023-05-20T05:12:05.252Z</updated>
   <id>https://www.fomal.cc/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LED防腐蚀知识</title>
+    <link href="https://www.fomal.cc/posts/ba58fbd9.html"/>
+    <id>https://www.fomal.cc/posts/ba58fbd9.html</id>
+    <published>2023-05-20T05:10:42.073Z</published>
+    <updated>2023-05-20T05:12:05.252Z</updated>
+    
+    <content type="html"><![CDATA[<p>LED产品的可靠性，是用来估算LED产品寿命的最重要规格之一。即使在大多数的不同条件下，一般LED产品都可以持续运作。不过一旦LED被腐蚀，LED受到周围环境产生化学反应，就会使得LED产品的性能降低。</p><p>为了避免LED受到腐蚀，最好的方法是避免LED接近有害物质。即使只有少量的有害物质也会导致LED腐蚀。即使LED在加工过程中仅与腐蚀性气体接触，例如生产线中的机器，也可能会产生不良影响。在这些情况下，通常可以在实际系统设置之前，先观察LED组件是否受到损坏。特别是应该避免受到硫(Sulfur)污染。</p><p>下面是一些可能含有腐蚀性物质的例子（特别是硫化氢）包括：</p><ul><li>O形圈(O-RING)</li><li>垫圈</li><li>有机橡胶</li><li>泡沫垫</li><li>密封橡胶</li><li>含硫磺的硫化弹性体</li><li>防震垫</li></ul><p>如果无法完全避免這些有害物质，则应使用具有更高耐腐蚀性的LED。但是，请记住——限制腐蚀的效果，具体取决于有害物质的浓度。即使选择了更耐用的LED，您也应該尽量减少这些LED材料的暴露。</p><p>通常，热量、湿度和光等能够加速腐蚀过程。但是，最主要影响因素还是有害物质的浓度水平和温度，限制这两者将是保护LED的最重要的方法。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;LED产品的可靠性，是用来估算LED产品寿命的最重要规格之一。即使在大多数的不同条件下，一般LED产品都可以持续运作。不过一旦LED被腐蚀，LED受到周围环境产生化学反应，就会使得LED产品的性能降低。&lt;/p&gt;
+&lt;p&gt;为了避免LED受到腐蚀，最好的方法是避免LED接近有害物</summary>
+      
+    
+    
+    
+    <category term="LED知识" scheme="https://www.fomal.cc/categories/LED%E7%9F%A5%E8%AF%86/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>DMX512控制器教程</title>
